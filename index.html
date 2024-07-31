@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saniya & Nikita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-heading" draggable="true">Celebrating 6 Beautiful Months Together! 💖</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#surprises">Surprises 🎉</a></li>
+            <li><a href="#photos">Photos 📸</a></li>
+            <li><a href="#aud">Music🎵</a></li>
+            <li><a href="#messages">Messages ✉️</a></li>
+            <li><a href="#gifts">Gifts 🎁</a></li>
+            <li><a href="#games">Games 🎮</a></li>
+            
+        </ul>
+    </nav>
+
+    <section id="surprises">
+        <h2>Surprises</h2>
+        <button onclick="showMessage()">Surprise Message 💌</button>
+        <div id="message" style="display:none;">
+            <h2>We’ve made it through 6 amazing months! Here’s to many more together. 💖</h2>
+            <p>
+ Six months ago, our tale began, so sudden and unplanned,
+We never guessed the path ahead, where time would guide our hand.
+Seriousness was absent then, a fleeting, lighthearted dance,
+But look at what the time has wrought, a true and deep romance.
+
+Destiny, it seems, had its way, guiding us through the night,
+When both of us were restless, lost in dreams and in the fight.
+In a moment of unknown need, I reached out, heart so bare,
+Unaware of what would bloom, a love beyond compare.
+
+Perhaps the stars conspired, a cosmic force to bind,
+To bring us together, to show that fate is kind.
+What once seemed random chance, might be destiny's grand scheme,
+For here we stand, entwined as one, living out a dream.
+            </p>
+            <p>
+                Thank you for being my rock, my confidant, and my love. 
+            </p>
+        </div>
+        <div id="confetti"></div> <!-- Confetti container -->
+    </section>
+
+    <section id="photos">
+        <h2>Our Photo Gallery</h2>
+        <div class="photo-gallery">
+            <img src="picture1.jpeg" alt="Photo 1">
+            <img src="picture2.jpeg" alt="Photo 2">
+            <img src="picture3.jpeg" alt="Photo 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section id="audio">
+     <section id="aud">
+        <div class="audio-player">
+            <audio id="audio" controls>
+                <source src="audioo.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button id="playPauseBtn">Play/Pause</button>
+        </div>
+   </section>
+        <section id="messages">
+            <h2>Guestbook</h2>
+            <textarea id="guestbook" placeholder="Leave your message here..."></textarea>
+            <button onclick="submitMessage()">Submit</button>
+            <div id="submittedMessages"></div>
+        </section>
+   
+    <section id="gifts">
+        <h2>Virtual Gifts</h2>
+        <div class="gift">
+            <img src="teddybear.gif" alt="Teddy Bear" class="animated-gift">
+            <img src="flower.gif" alt="Flower" class="animated-gift">
+        </div>
+    </section>
+    <section id="games">
+        <h2>Fun Games</h2>
+        <button onclick="startQuiz()">Start Love Quiz 💕</button>
+        <button onclick="startPuzzle()">Play Jigsaw Puzzle 🧩</button>
+        <div id="puzzleContainer"></div>
+        <div id="puzzleMessage" style="display: none; color: green;">Congratulations! You solved the puzzle! 🎉</div>
+    </section>
+    
+
+
+    <footer>
+        <p>&copy; 2024 Saniya & Nikita. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

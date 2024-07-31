@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, pink, cornflowerblue);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    padding: 2rem;
+}
+
+h1 {
+    color: pastel teal; /* Change heading color */
+    cursor: move; /* Indicate that it can be dragged */
+}
+h1 {
+    color: #ff69b4; /* Heading color */
+    font-size: 2.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+#main-heading {
+    color: #003366;
+    cursor: move;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: cornflowerblue;
+    margin-top: 50px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.photo-gallery img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+#puzzleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    margin: 20px auto;
+    width: 306px;
+    height: 306px;
+    position: relative;
+}
+
+.puzzlePiece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    cursor: grab;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.puzzlePiece.dragging {
+    opacity: 0.5;
+}
+
+.puzzlePiece.drag-over {
+    border: 2px dashed #000;
+}
+
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: confetti-fall 7s forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.gift {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.animated-gift {
+    width: 100px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.audio-player {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+#audio {
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+#aud{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 5vh;
+    background-color: #f0f0f0;
+}
+
+#playPauseBtn {
+    padding: 10px 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playPauseBtn:hover {
+    background: #ff1493;
+}
+.te-amo-style {
+    color: #19948e; /* Change this to your desired color */
+    font-size: 1.2rem; /* Optional: Adjust the font size */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
